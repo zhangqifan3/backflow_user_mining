@@ -1,11 +1,11 @@
-#/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Author: zhangqifan
 # @Date  : 2019/8/29
+# ==========================================================================================================
+
 """Wide and Deep Model Prediction
 Not support for custom classifier, cause use different variable name scope, key not found in checkpoint"""
 
-#import argparse
 import os
 import sys
 import time
@@ -16,9 +16,6 @@ import tensorflow as tf
 from lib.read_conf import Config
 from lib.tf_dataset import input_fn
 from lib.build_estimator import build_estimator
-
-
-
 
 def main():
     CONFIG = Config()
